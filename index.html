@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script src="client.js"></script>
+</head>
+
+<body>
+	<form action="#" onsubmit="setupDomain()" name="domainInfo">
+		<input type="text" name="domain" placeholder="Domain name (without the TLD), ex: blockyjump)"/>
+		<input type="text" name="bearerToken" placeholder="Cloudflare Auth Token (access to Zone:Edit)"/>
+		<input type="text" name="cfAccountId" placeholder="Cloudflare Account ID"/>
+		<input type="text" name="herokuApiKey" placeholder="Heroku API Key"/>
+		<input type="text" name="username" placeholder = "Freenom account email (optional)"/>
+		<input type="text" name="password" placeholder="Freenom account password (optional)"/>
+        <input type="text" name="builtDomain" placeholder="Frontend URL (ex: sesamestrong.github.io)"/>
+</form>
+<div id="display">
+<div id="freenomCreds">
+Freenom username: <input id="freenomUsername" readonly>
+Freenom password: <input id="freenomPassword" readonly>
+</div>
+<ol id="domainDisplay">
+</ol>
+</div>
+</body>
+
+</html>
