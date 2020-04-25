@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({
 
 app.use(cookieParser());
 
-express.use(require("cors")());
+app.use(require("cors")());
 
 const proxyCycler = require("@sesamestrong/proxy-user").proxify(1);
 

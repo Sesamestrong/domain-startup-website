@@ -1,7 +1,7 @@
 image: buildkite/puppeteer
 tasks:
   - init: npm install
-    command: npm run client
+    command: npm start
 vscode:
   extensions:
     - RobbOwen.synthwave-vscode@0.1.3:WiAUAhkY+6EYnYGSzxpLWA==
