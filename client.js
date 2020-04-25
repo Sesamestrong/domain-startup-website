@@ -6,8 +6,8 @@ const freenomUsername = document.querySelector("#freenomUsername");
 const freenomPassword = document.querySelector("#freenomPassword");
 async function setupDomain() {
     const info = await new Promise((resolve) => {
-        const buh = setTimeout(() => fetch("https://api.domainstartup.ml/ping"), 1000 * 10);
-        (fetch("https://api.domainstartup.ml/setup", {
+        const buh = setTimeout(() => fetch("https://domain-setup.herokuapp.com/ping"), 1000 * 10);
+        (fetch("https://domain-setup.herokuapp.com/setup", {
             method: "POST",
             body: new FormData(document.domainInfo)
         }))
