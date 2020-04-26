@@ -7,17 +7,18 @@
 
 <body>
 	<form action="#" onsubmit="setupDomain()" name="domainInfo">
-		<input type="text" name="domain" placeholder="Domain name (without the TLD), ex: blockyjump)"/>
-		<input type="text" name="bearerToken" placeholder="Cloudflare Auth Token (access to Zone:Edit)"/>
-		<input type="text" name="cfAccountId" placeholder="Cloudflare Account ID"/>
-		<input type="text" name="herokuApiKey" placeholder="Heroku API Key"/>
-		<input type="text" name="username" placeholder = "Freenom account email (optional)"/>
-		<input type="text" name="password" placeholder="Freenom account password (optional)"/>
-        <input type="text" name="builtDomain" placeholder="Frontend URL (ex: sesamestrong.github.io)"/>
+            <input type="text" name="domain" placeholder="Domain name (without the TLD), ex: blockyjump)"/><br>
+		<input type="text" name="bearerToken" placeholder="Cloudflare Auth Token (access to Zone:Edit)"/><br>
+		<input type="text" name="cfAccountId" placeholder="Cloudflare Account ID"/><br>
+		<input type="text" name="herokuApiKey" placeholder="Heroku API Key"/><br>
+		<input type="text" name="username" placeholder = "Freenom account email (optional)"/><br>
+		<input type="text" name="password" placeholder="Freenom account password (optional)"/><br>
+        <input type="text" name="builtDomain" placeholder="Frontend URL (ex: sesamestrong.github.io)"/><br>
+        <input type="submit" value="Get domain (takes a while, as Freenom domains take 5-30 minutes to be accessible)"/><br>
 </form>
 <div id="display">
 <div id="freenomCreds">
-Freenom username: <input id="freenomUsername" readonly>
+Freenom username: <input id="freenomUsername" readonly><br>
 Freenom password: <input id="freenomPassword" readonly>
 </div>
 <ol id="domainDisplay">
