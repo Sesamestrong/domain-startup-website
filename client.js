@@ -1,5 +1,3 @@
-import { resolve } from "dns";
-
 const display = document.querySelector("#display");
 const domainList = document.querySelector("#domainDisplay");
 const freenomUsername = document.querySelector("#freenomUsername");
